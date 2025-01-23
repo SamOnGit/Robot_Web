@@ -1,0 +1,23 @@
+1737537096536	geckodriver	INFO	Listening on 127.0.0.1:56329
+1737537099559	mozrunner::runner	INFO	Running command: "C:\\Users\\samuel.a.pereira\\.cache\\selenium\\firefox\\win64\\134.0.2\\firefox.exe" "--marionette" "--remo ... emote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\SAMUEL~1.PER\\AppData\\Local\\Temp\\rust_mozprofile7rDigT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1737537100043	Marionette	INFO	Marionette enabled
+1737537100248	Marionette	INFO	Listening on port 56349
+WebDriver BiDi listening on ws://127.0.0.1:56330
+Read port: 56349
+1737537100413	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56330/devtools/browser/ae2fda67-e5c0-4f5d-a5a1-b9d8eff5796b
+JavaScript warning: https://www.google.com/js/th/mTnqp3rqhHPOwhkkZsgSxXSWNd7C0z5fTwap6dIcpys.js line 2 > eval line 1404 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.youtube.com/s/desktop/3205cbb0/jsbin/desktop_polymer.vflset/desktop_polymer.js, line 1944: Script terminated by timeout at:
+Nl.prototype.transition/d<@https://www.youtube.com/s/desktop/3205cbb0/jsbin/desktop_polymer.vflset/desktop_polymer.js:1944:220
+Nl.prototype.transition@https://www.youtube.com/s/desktop/3205cbb0/jsbin/desktop_polymer.vflset/desktop_polymer.js:1944:93
+sJ/<@https://www.youtube.com/s/desktop/3205cbb0/jsbin/desktop_polymer.vflset/desktop_polymer.js:11796:114
+
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login%20edje" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login%20edje" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login%20edje" ({})
+1737537555663	Marionette	INFO	Stopped listening on port 56349
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
