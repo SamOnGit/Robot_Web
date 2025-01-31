@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-01-28T10:35:25.891433" rpa="false" schemaversion="5">
+<suite id="s1" name="Aula2" source="C:\000SAMNS\Robot_Framework\Robot_Web\aula2.robot">
+<test id="s1-t1" name="TESTE01 - Logar com user e password corretos" line="26">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-28T10:35:26.221193" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-28T10:35:26.220997" elapsed="5.772418"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-28T10:35:36.994822" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-28T10:35:31.994064" elapsed="5.001018"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<msg time="2025-01-28T10:35:37.010359" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.84)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60D07FBE5+28741]
+	(No symbol) [0x00007FF60CFE7890]
+	(No symbol) [0x00007FF60CE84FDA]
+	(No symbol) [0x00007FF60CE5ED45]
+	(No symbol) [0x00007FF60CF06EC7]
+	(No symbol) [0x00007FF60CF1F982]
+	(No symbol) [0x00007FF60CEFFCB3]
+	(No symbol) [0x00007FF60CEC9FB3]
+	(No symbol) [0x00007FF60CECB331]
+	GetHandleVerifier [0x00007FF60D3BA73D+3414941]
+	GetHandleVerifier [0x00007FF60D3CE64A+3496618]
+	GetHandleVerifier [0x00007FF60D3C413D+3454365]
+	GetHandleVerifier [0x00007FF60D14848B+850155]
+	(No symbol) [0x00007FF60CFF37FF]
+	(No symbol) [0x00007FF60CFEF0C4]
+	(No symbol) [0x00007FF60CFEF25D]
+	(No symbol) [0x00007FF60CFDE079]
+	BaseThreadInitThunk [0x00007FFE8E767374+20]
+	RtlUserThreadStart [0x00007FFE8F9FCC91+33]
+</msg>
+<msg time="2025-01-28T10:35:37.012157" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.84)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60D07FBE5+28741]
+	(No symbol) [0x00007FF60CFE7890]
+	(No symbol) [0x00007FF60CE84FDA]
+	(No symbol) [0x00007FF60CE5ED45]
+	(No symbol) [0x00007FF60CF06EC7]
+	(No symbol) [0x00007FF60CF1F982]
+	(No symbol) [0x00007FF60CEFFCB3]
+	(No symbol) [0x00007FF60CEC9FB3]
+	(No symbol) [0x00007FF60CECB331]
+	GetHandleVerifier [0x00007FF60D3BA73D+3414941]
+	GetHandleVerifier [0x00007FF60D3CE64A+3496618]
+	GetHandleVerifier [0x00007FF60D3C413D+3454365]
+	GetHandleVerifier [0x00007FF60D14848B+850155]
+	(No symbol) [0x00007FF60CFF37FF]
+	(No symbol) [0x00007FF60CFEF0C4]
+	(No symbol) [0x00007FF60CFEF25D]
+	(No symbol) [0x00007FF60CFDE079]
+	BaseThreadInitThunk [0x00007FFE8E767374+20]
+	RtlUserThreadStart [0x00007FFE8F9FCC91+33]
+</msg>
+<arg>xpath://input[@name="username"]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="FAIL" start="2025-01-28T10:35:36.996013" elapsed="0.027218">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.84)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60D07FBE5+28741]
+	(No symbol) [0x00007FF60CFE7890]
+	(No symbol) [0x00007FF60CE84FDA]
+	(No symbol) [0x00007FF60CE5ED45]
+	(No symbol) [0x00007FF60CF06EC7]
+	(No symbol) [0x00007FF60CF1F982]
+	(No symbol) [0x00007FF60CEFFCB3]
+	(No symbol) [0x00007FF60CEC9FB3]
+	(No symbol) [0x00007FF60CECB331]
+	GetHandleVerifier [0x00007FF60D3BA73D+3414941]
+	GetHandleVerifier [0x00007FF60D3CE64A+3496618]
+	GetHandleVerifier [0x00007FF60D3C413D+3454365]
+	GetHandleVerifier [0x00007FF60D14848B+850155]
+	(No symbol) [0x00007FF60CFF37FF]
+	(No symbol) [0x00007FF60CFEF0C4]
+	(No symbol) [0x00007FF60CFEF25D]
+	(No symbol) [0x00007FF60CFDE079]
+	BaseThreadInitThunk [0x00007FFE8E767374+20]
+	RtlUserThreadStart [0x00007FFE8F9FCC91+33]
+</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://input[@name="username"]</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-28T10:35:37.023541" elapsed="0.000035"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://input[@name="password"]</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-28T10:35:37.023756" elapsed="0.000023"/>
+</kw>
+<tag>Logar</tag>
+<status status="FAIL" start="2025-01-28T10:35:26.220049" elapsed="10.803910">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.84)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60D07FBE5+28741]
+	(No symbol) [0x00007FF60CFE7890]
+	(No symbol) [0x00007FF60CE84FDA]
+	(No symbol) [0x00007FF60CE5ED45]
+	(No symbol) [0x00007FF60CF06EC7]
+	(No symbol) [0x00007FF60CF1F982]
+	(No symbol) [0x00007FF60CEFFCB3]
+	(No symbol) [0x00007FF60CEC9FB3]
+	(No symbol) [0x00007FF60CECB331]
+	GetHandleVerifier [0x00007FF60D3BA73D+3414941]
+	GetHandleVerifier [0x00007FF60D3CE64A+3496618]
+	GetHandleVerifier [0x00007FF60D3C413D+3454365]
+	GetHandleVerifier [0x00007FF60D14848B+850155]
+	(No symbol) [0x00007FF60CFF37FF]
+	(No symbol) [0x00007FF60CFEF0C4]
+	(No symbol) [0x00007FF60CFEF25D]
+	(No symbol) [0x00007FF60CFDE079]
+	BaseThreadInitThunk [0x00007FFE8E767374+20]
+	RtlUserThreadStart [0x00007FFE8F9FCC91+33]
+</status>
+</test>
+<status status="FAIL" start="2025-01-28T10:35:25.898277" elapsed="11.127815"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Logar</stat>
+</tag>
+<suite>
+<stat name="Aula2" id="s1" pass="0" fail="1" skip="0">Aula2</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-01-28T10:35:37.010359" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.84)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60D07FBE5+28741]
+	(No symbol) [0x00007FF60CFE7890]
+	(No symbol) [0x00007FF60CE84FDA]
+	(No symbol) [0x00007FF60CE5ED45]
+	(No symbol) [0x00007FF60CF06EC7]
+	(No symbol) [0x00007FF60CF1F982]
+	(No symbol) [0x00007FF60CEFFCB3]
+	(No symbol) [0x00007FF60CEC9FB3]
+	(No symbol) [0x00007FF60CECB331]
+	GetHandleVerifier [0x00007FF60D3BA73D+3414941]
+	GetHandleVerifier [0x00007FF60D3CE64A+3496618]
+	GetHandleVerifier [0x00007FF60D3C413D+3454365]
+	GetHandleVerifier [0x00007FF60D14848B+850155]
+	(No symbol) [0x00007FF60CFF37FF]
+	(No symbol) [0x00007FF60CFEF0C4]
+	(No symbol) [0x00007FF60CFEF25D]
+	(No symbol) [0x00007FF60CFDE079]
+	BaseThreadInitThunk [0x00007FFE8E767374+20]
+	RtlUserThreadStart [0x00007FFE8F9FCC91+33]
+</msg>
+</errors>
+</robot>

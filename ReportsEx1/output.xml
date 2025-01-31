@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-01-28T11:15:10.023565" rpa="false" schemaversion="5">
+<suite id="s1" name="ex1 AutoTestes" source="C:\000SAMNS\Robot_Framework\Robot_Web\ex1_AutoTestes.robot">
+<test id="s1-t1" name="Preencher o formulario" line="17">
+<kw name="No Operation" owner="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" start="2025-01-28T11:15:10.357066" elapsed="0.000121"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:10.357584" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-28T11:15:10.357443" elapsed="4.961161"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-28T11:15:18.319934" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-28T11:15:15.319281" elapsed="3.000849"/>
+</kw>
+<status status="PASS" start="2025-01-28T11:15:10.356296" elapsed="7.964286"/>
+</test>
+<test id="s1-t2" name="Preencher Campo nome, email e telefone" line="23">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>xpath://input[@id="name"]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-01-28T11:15:18.321924" elapsed="0.032062"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:18.354917" level="INFO">Typing text 'Samuel' into text field 'xpath://input[@id="name"]'.</msg>
+<arg>xpath://input[@id="name"]</arg>
+<arg>Samuel</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T11:15:18.354521" elapsed="0.126652"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:18.481896" level="INFO">Typing text 'samuel@gmail.com' into text field 'xpath://input[@id="email"]'.</msg>
+<arg>xpath://input[@id="email"]</arg>
+<arg>samuel@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T11:15:18.481617" elapsed="0.088094"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:18.570516" level="INFO">Typing text '+351 111222333' into text field 'xpath://input[@id="phone"]'.</msg>
+<arg>xpath://input[@id="phone"]</arg>
+<arg>+351 111222333</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T11:15:18.570219" elapsed="0.065165"/>
+</kw>
+<status status="PASS" start="2025-01-28T11:15:18.321455" elapsed="0.314277"/>
+</test>
+<test id="s1-t3" name=" Preencher Radio buton gender" line="31">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:18.637029" level="INFO">Clicking element '//input[@id="male" and @type="radio" and @value="male"]'.</msg>
+<arg>//input[@id="male" and @type="radio" and @value="male"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T11:15:18.636842" elapsed="0.066543"/>
+</kw>
+<status status="PASS" start="2025-01-28T11:15:18.636385" elapsed="0.067361"/>
+</test>
+<test id="s1-t4" name="Escolher 3 opções do campo &quot;Days&quot;" line="36">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:18.705764" level="INFO">Clicking element 'xpath://input[@id="sunday" and @type="checkbox"]'.</msg>
+<arg>xpath://input[@id="sunday" and @type="checkbox"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T11:15:18.705398" elapsed="0.065623"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:18.771658" level="INFO">Clicking element 'xpath://input[@id="tuesday" and @type="checkbox"]'.</msg>
+<arg>xpath://input[@id="tuesday" and @type="checkbox"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T11:15:18.771447" elapsed="0.054565"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:18.826499" level="INFO">Clicking element 'xpath://input[@id="thursday" and @type="checkbox"]'.</msg>
+<arg>xpath://input[@id="thursday" and @type="checkbox"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T11:15:18.826324" elapsed="0.056911"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:18.883743" level="INFO">Verifying checkbox 'xpath://input[@id="sunday" and @type="checkbox"]' is selected.</msg>
+<arg>xpath://input[@id="sunday" and @type="checkbox"]</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2025-01-28T11:15:18.883554" elapsed="0.021317"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:18.905314" level="INFO">Verifying checkbox 'xpath://input[@id="tuesday" and @type="checkbox"]' is selected.</msg>
+<arg>xpath://input[@id="tuesday" and @type="checkbox"]</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2025-01-28T11:15:18.905138" elapsed="0.017344"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:18.922900" level="INFO">Verifying checkbox 'xpath://input[@id="thursday" and @type="checkbox"]' is selected.</msg>
+<arg>xpath://input[@id="thursday" and @type="checkbox"]</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2025-01-28T11:15:18.922741" elapsed="0.017286"/>
+</kw>
+<status status="PASS" start="2025-01-28T11:15:18.704842" elapsed="0.235553"/>
+</test>
+<test id="s1-t5" name="Escolher uma opção do campo &quot;Country&quot;" line="47">
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:18.942016" level="INFO">Selecting options from selection list 'xpath://select[@id="country"]' by index 0.</msg>
+<arg>xpath://select[@id="country"]</arg>
+<arg>0</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-01-28T11:15:18.941811" elapsed="0.037676"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:18.980003" level="INFO">Selecting options from selection list 'xpath://select[@id="country"]' by label United Kingdom.</msg>
+<arg>xpath://select[@id="country"]</arg>
+<arg>United Kingdom</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-01-28T11:15:18.979770" elapsed="0.051922"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:19.032284" level="INFO">Selecting options from selection list 'xpath://select[@id="country"]' by value uk.</msg>
+<arg>xpath://select[@id="country"]</arg>
+<arg>uk</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.032052" elapsed="0.045741"/>
+</kw>
+<status status="PASS" start="2025-01-28T11:15:18.941267" elapsed="0.136813"/>
+</test>
+<test id="s1-t6" name="Escolher 2 opções do campo &quot;Colors&quot;" line="71">
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:19.079295" level="INFO">Selecting options from selection list 'xpath://select[@id="colors"]' by index 0.</msg>
+<arg>xpath://select[@id="colors"]</arg>
+<arg>0</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.079109" elapsed="0.072921"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:19.152493" level="INFO">Selecting options from selection list 'xpath://select[@id="colors"]' by index 2.</msg>
+<arg>xpath://select[@id="colors"]</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.152317" elapsed="0.052514"/>
+</kw>
+<kw name="List Selection Should Be" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:19.205261" level="INFO">Verifying list 'xpath://select[@id="colors"]' has options [ Red | Green ] selected.</msg>
+<msg time="2025-01-28T11:15:19.212498" level="INFO">Current page contains list 'xpath://select[@id="colors"]'.</msg>
+<arg>xpath://select[@id="colors"]</arg>
+<arg>Red</arg>
+<arg>Green</arg>
+<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.205098" elapsed="0.077245"/>
+</kw>
+<status status="PASS" start="2025-01-28T11:15:19.078715" elapsed="0.203936"/>
+</test>
+<test id="s1-t7" name="Escolher 2 opções do campo &quot;Sorted List&quot;" line="91">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:19.283716" level="INFO">Clicking element '//option[@value="cat"]'.</msg>
+<arg>//option[@value="cat"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.283559" elapsed="0.025199"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:19.309253" level="INFO">Clicking element '//option[@value="dog"]'.</msg>
+<arg>//option[@value="dog"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.309079" elapsed="0.024765"/>
+</kw>
+<kw name="List Selection Should Be" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:19.334358" level="INFO">Verifying list 'xpath://select[@id="animals"]' has options [ cat | dog ] selected.</msg>
+<msg time="2025-01-28T11:15:19.345820" level="INFO">Current page contains list 'xpath://select[@id="animals"]'.</msg>
+<arg>xpath://select[@id="animals"]</arg>
+<arg>cat</arg>
+<arg>dog</arg>
+<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.334175" elapsed="0.090683"/>
+</kw>
+<status status="PASS" start="2025-01-28T11:15:19.283143" elapsed="0.141993"/>
+</test>
+<test id="s1-t8" name="Preencha o campo &quot;Date Picker 1:&quot;" line="97">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:19.426026" level="INFO">Typing text '29/01/2025' into text field 'xpath://input[@id="datepicker"]'.</msg>
+<arg>xpath://input[@id="datepicker"]</arg>
+<arg>29/01/2025</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.425873" elapsed="0.073610"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:19.500118" level="INFO">Sending key(s) ('ESCAPE',) to xpath://input[@id="datepicker"] element.</msg>
+<msg time="2025-01-28T11:15:19.776249" level="INFO">Pressing special key ESCAPE to element.</msg>
+<msg time="2025-01-28T11:15:19.776320" level="INFO">Releasing special key ESCAPE.</msg>
+<arg>xpath://input[@id="datepicker"]</arg>
+<arg>ESCAPE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.499816" elapsed="0.280378"/>
+</kw>
+<status status="PASS" start="2025-01-28T11:15:19.425601" elapsed="0.354850"/>
+</test>
+<test id="s1-t9" name="Preencha o campo &quot;Date Picker 3:&quot;" line="106">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:19.781350" level="INFO">Typing text '12-01-2024' into text field '//input[@id="start-date"]'.</msg>
+<arg>//input[@id="start-date"]</arg>
+<arg>12-01-2024</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.781195" elapsed="0.051084"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:19.832765" level="INFO">Typing text '12-15-2024' into text field '//input[@id="end-date"]'.</msg>
+<arg>//input[@id="end-date"]</arg>
+<arg>12-15-2024</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.832590" elapsed="0.055381"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:19.888491" level="INFO">Clicking button '//button[@class="submit-btn"]'.</msg>
+<arg>//button[@class="submit-btn"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.888279" elapsed="0.059342"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:19.948140" level="INFO">Verifying element '//div[text()="You selected a range of 14 days."]' contains exact text 'You selected a range of 14 days.'.</msg>
+<arg>//div[text()="You selected a range of 14 days."]</arg>
+<arg>You selected a range of 14 days.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.947952" elapsed="0.015605"/>
+</kw>
+<status status="PASS" start="2025-01-28T11:15:19.780918" elapsed="0.182918"/>
+</test>
+<test id="s1-t10" name="Realizar um upload de um arquivo." line="118">
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:15:19.964694" level="INFO">Sending C:\000SAMNS\Robot_Framework\TesteUploadPDF.pdf to browser.</msg>
+<arg>//input[@id="singleFileInput"]</arg>
+<arg>C:\\000SAMNS\\Robot_Framework\\TesteUploadPDF.pdf</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.964529" elapsed="0.024065"/>
+</kw>
+<status status="PASS" start="2025-01-28T11:15:19.964265" elapsed="0.024663"/>
+</test>
+<test id="s1-t11" name="Logar na aplicação saucedemo" line="122">
+<kw name="No Operation" owner="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.990048" elapsed="0.000177"/>
+</kw>
+<status status="PASS" start="2025-01-28T11:15:19.989617" elapsed="0.000870"/>
+</test>
+<test id="s1-t12" name="Adicionar um produto ao carrinho" line="131">
+<kw name="No Operation" owner="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.991320" elapsed="0.000131"/>
+</kw>
+<status status="PASS" start="2025-01-28T11:15:19.991047" elapsed="0.000553"/>
+</test>
+<test id="s1-t13" name="Excluir um produto do carrinho" line="139">
+<kw name="No Operation" owner="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.992261" elapsed="0.000084"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-28T11:15:29.993111" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-28T11:15:19.992465" elapsed="10.001311"/>
+</kw>
+<status status="PASS" start="2025-01-28T11:15:19.992006" elapsed="10.002454"/>
+</test>
+<status status="PASS" start="2025-01-28T11:15:10.030440" elapsed="19.965892"/>
+</suite>
+<statistics>
+<total>
+<stat pass="13" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="ex1 AutoTestes" id="s1" pass="13" fail="0" skip="0">ex1 AutoTestes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
